@@ -81,7 +81,6 @@
     if(self.delegate && [self.delegate respondsToSelector:@selector(M3U8AnalyseFinish)]){
         [self.delegate M3U8AnalyseFinish];
     }
-    
 }
 
 /* m3u8文件格式示例

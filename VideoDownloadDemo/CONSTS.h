@@ -32,7 +32,7 @@ typedef NS_ENUM(NSInteger, M3U8AnalyseFail){
 };
 
 #define kPathDownload    @"DownloadVideos"
-#define kTextDownloadingFileSuffix @"_etc"
+#define kTestDownloadingFileSuffix @"_etc"
 #define kDownloadVideoId @"TTT"
 
 

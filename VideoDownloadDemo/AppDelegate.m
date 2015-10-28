@@ -65,7 +65,7 @@
     [_httpServer setType:@"_http._tcp."];
     [_httpServer setPort:54321];
     NSString *pathPrefix = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,NSUserDomainMask,YES) objectAtIndex:0];
-    NSString *webPath = [pathPrefix stringByAppendingPathComponent:@"DownloadVideos"];
+    NSString *webPath = [pathPrefix stringByAppendingPathComponent:kPathDownload];
     NSLog(@"Setting document root: %@", webPath);
     [_httpServer setDocumentRoot:webPath];
     NSError *error;

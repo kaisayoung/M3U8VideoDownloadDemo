@@ -34,7 +34,7 @@
         NSString *pathPrefix = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,NSUserDomainMask,YES) objectAtIndex:0];
         NSString *savePath = [[pathPrefix stringByAppendingPathComponent:kPathDownload] stringByAppendingPathComponent:self.filePath];
         //这里针对不同的下载方法还需要改动下
-        self.tmpFilePath = [NSString stringWithString:[savePath stringByAppendingPathComponent:[self.fileName stringByAppendingString:kTextDownloadingFileSuffix]]];
+        self.tmpFilePath = [NSString stringWithString:[savePath stringByAppendingPathComponent:[self.fileName stringByAppendingString:kTestDownloadingFileSuffix]]];
         BOOL isDir = YES;
         NSFileManager *fileManager = [NSFileManager defaultManager];
         if(![fileManager fileExistsAtPath:savePath isDirectory:&isDir])
