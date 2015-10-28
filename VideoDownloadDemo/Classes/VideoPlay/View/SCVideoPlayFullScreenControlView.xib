@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7702" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="cDf-j0-92C" customClass="SCVideoPlayFullScreenControlView">
+            <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sc_video_play_fs_mask_bg.png" id="MYA-Dr-Ef2">
+                    <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </imageView>
+                <view clipsSubviews="YES" alpha="0.0" contentMode="scaleToFill" id="nY4-fq-3Xp">
+                    <rect key="frame" x="0.0" y="319" width="568" height="1"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" id="dvB-WV-uSa">
+                            <rect key="frame" x="0.0" y="0.0" width="1" height="1"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" heightSizable="YES"/>
+                            <color key="backgroundColor" red="1" green="0.47058823529999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </view>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sc_video_play_fs_loading_bg.jpg" id="9ja-Lq-0uc">
+                    <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </imageView>
+                <view clipsSubviews="YES" contentMode="scaleToFill" id="yvh-bM-ovd">
+                    <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </view>
+                <view clipsSubviews="YES" contentMode="scaleToFill" id="VGA-Ea-45c">
+                    <rect key="frame" x="0.0" y="280" width="568" height="40"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" id="TXP-gF-x9m">
+                            <rect key="frame" x="64" y="0.0" width="434" height="40"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        </view>
+                        <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="uXu-YB-xUD">
+                            <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <state key="normal" image="sc_video_play_ns_play_btn.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="highlighted" image="sc_video_play_ns_play_btn_hl.png"/>
+                            <connections>
+                                <action selector="onOneFuctionButtonClicked:" destination="cDf-j0-92C" eventType="touchUpInside" id="vGm-Tw-6Kk"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="xGw-uR-1OK">
+                            <rect key="frame" x="528" y="0.0" width="40" height="40"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <state key="normal" image="sc_video_play_fs_enter_ns_btn.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="highlighted" image="sc_video_play_fs_enter_ns_btn_hl.png"/>
+                            <connections>
+                                <action selector="onOneFuctionButtonClicked:" destination="cDf-j0-92C" eventType="touchUpInside" id="Ttd-Ld-m8u"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="7Lh-Ox-8kW">
+                            <rect key="frame" x="20" y="9" width="36" height="21"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="8"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="bT0-Gu-Wqn">
+                            <rect key="frame" x="508" y="9" width="36" height="21"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="8"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </view>
+                <view hidden="YES" clipsSubviews="YES" contentMode="scaleToFill" id="4T8-Ii-w6o">
+                    <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" id="ibO-LQ-lkW">
+                            <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <subviews>
+                                <button tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="aOO-dE-feq">
+                                    <rect key="frame" x="244" y="115" width="80" height="90"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                    <inset key="titleEdgeInsets" minX="-42" minY="54" maxX="0.0" maxY="0.0"/>
+                                    <inset key="imageEdgeInsets" minX="18" minY="-17" maxX="-2" maxY="0.0"/>
+                                    <state key="normal" title="重播" image="sc_video_play_finish_replay_btn.png">
+                                        <color key="titleColor" red="0.27450980390000002" green="0.27450980390000002" blue="0.27450980390000002" alpha="1" colorSpace="deviceRGB"/>
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="onOneFuctionButtonClicked:" destination="cDf-j0-92C" eventType="touchUpInside" id="5ag-M2-ccc"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" red="0.090196078430000007" green="0.090196078430000007" blue="0.094117647060000004" alpha="1" colorSpace="calibratedRGB"/>
+                </view>
+                <view clipsSubviews="YES" contentMode="scaleToFill" id="HT9-m9-eMO">
+                    <rect key="frame" x="0.0" y="20" width="568" height="40"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="di8-W5-LGM">
+                            <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <state key="normal" image="sc_video_play_back_btn.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="highlighted" image="sc_video_play_back_btn_hl.png"/>
+                            <connections>
+                                <action selector="onOneFuctionButtonClicked:" destination="cDf-j0-92C" eventType="touchUpInside" id="Ra1-T8-hZ4"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="VHK-Nu-RXd">
+                            <rect key="frame" x="35" y="10" width="523" height="21"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="bottomControlView" destination="VGA-Ea-45c" id="KXo-4J-VOe"/>
+                <outlet property="currentPlayedProgressView" destination="dvB-WV-uSa" id="OIv-Zb-1lq"/>
+                <outlet property="hintView" destination="4T8-Ii-w6o" id="r64-Yh-PT7"/>
+                <outlet property="loadingBgImageView" destination="9ja-Lq-0uc" id="vdS-4m-nsT"/>
+                <outlet property="maskImageView" destination="MYA-Dr-Ef2" id="YFf-1x-HuP"/>
+                <outlet property="playButton" destination="uXu-YB-xUD" id="fiV-ym-lgE"/>
+                <outlet property="playedTimeLabel" destination="7Lh-Ox-8kW" id="37m-sL-AVu"/>
+                <outlet property="progressControlBgView" destination="TXP-gF-x9m" id="mYm-S7-H7x"/>
+                <outlet property="progressHintView" destination="nY4-fq-3Xp" id="0rX-ZK-NyG"/>
+                <outlet property="replayButton" destination="aOO-dE-feq" id="w6i-fR-Y2U"/>
+                <outlet property="topControlView" destination="HT9-m9-eMO" id="a8c-oe-cSL"/>
+                <outlet property="totalTimeLabel" destination="bT0-Gu-Wqn" id="q2j-Yl-gqe"/>
+                <outlet property="transparentView" destination="yvh-bM-ovd" id="6ve-c9-WK7"/>
+                <outlet property="videoTitleLabel" destination="VHK-Nu-RXd" id="Gtx-g0-d8D"/>
+            </connections>
+            <point key="canvasLocation" x="-42" y="374"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="sc_video_play_back_btn.png" width="30" height="30"/>
+        <image name="sc_video_play_back_btn_hl.png" width="30" height="30"/>
+        <image name="sc_video_play_finish_replay_btn.png" width="40" height="40"/>
+        <image name="sc_video_play_fs_enter_ns_btn.png" width="30" height="30"/>
+        <image name="sc_video_play_fs_enter_ns_btn_hl.png" width="30" height="30"/>
+        <image name="sc_video_play_fs_loading_bg.jpg" width="568" height="320"/>
+        <image name="sc_video_play_fs_mask_bg.png" width="568" height="320"/>
+        <image name="sc_video_play_ns_play_btn.png" width="30" height="30"/>
+        <image name="sc_video_play_ns_play_btn_hl.png" width="30" height="30"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

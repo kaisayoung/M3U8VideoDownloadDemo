@@ -1,0 +1,29 @@
+//
+//  VideoPlayDemoPrefixHeader.pch
+//  VideoPlayDemo
+//
+//  Created by 王琦 on 15/7/23.
+//  Copyright (c) 2015年 王琦. All rights reserved.
+//
+
+#ifndef VideoPlayDemo_VideoPlayDemoPrefixHeader_pch
+#define VideoPlayDemo_VideoPlayDemoPrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif
+
+#ifdef __OBJC__
+
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import <SystemConfiguration/SystemConfiguration.h>
+#import <MobileCoreServices/MobileCoreServices.h>
+
+#import "CONSTS.h"
+#import "UIUtil.h"
+#import "UIView+ITTAdditions.h"
+
+#endif
+
